@@ -1,0 +1,24 @@
+{
+	"name": "random.js",
+	"version": "0.0.2",
+	"description": "create random objects for automated tests",
+	"main": "index.js",
+	"scripts": {
+		"prepare": "tsc && npm version patch",
+		"postpublish": "rm -rf ./dist && git push",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/JoaoLSS/randomjs.git"
+	},
+	"author": "JoaoLSS",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/JoaoLSS/randomjs/issues"
+	},
+	"homepage": "https://github.com/JoaoLSS/randomjs#readme",
+	"dependencies": {
+		"typescript": "^4.1.3"
+	}
+}
