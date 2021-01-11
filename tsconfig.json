@@ -1,0 +1,15 @@
+{
+	"compilerOptions": {
+		"target": "es5",
+		"module": "commonjs",
+		"declaration": true,
+		"outDir": "./dist",
+		"strict": true,
+		"inlineSources": true,
+		"inlineSourceMap": true,
+		"resolveJsonModule": true,
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"lib": ["dom", "dom.iterable", "esnext"]
+	}
+}

@@ -1,6 +1,6 @@
 {
-	"name": "random.js",
-	"version": "0.0.2",
+	"name": "randomjs",
+	"version": "0.0.1",
 	"description": "create random objects for automated tests",
 	"main": "index.js",
 	"scripts": {
