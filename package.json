@@ -2,7 +2,8 @@
 	"name": "random-types",
 	"version": "0.0.3",
 	"description": "create random objects for automated tests",
-	"main": "index.js",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
 	"scripts": {
 		"prepare": "tsc && npm version patch",
 		"postpublish": "rm -rf ./dist && git push",
