@@ -1,6 +1,6 @@
 import * as _random from "./src"
 
-var Random = _random
+export var Random = _random
 
 declare global {
 	var Random: typeof _random
