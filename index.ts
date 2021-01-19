@@ -1,6 +1,9 @@
-export * from "./src"
+import * as _random from "./src"
+
+var Random = _random
 
 declare global {
+	var Random: typeof _random
 	export namespace Random {
 		/**
 		 * Possible types of module
