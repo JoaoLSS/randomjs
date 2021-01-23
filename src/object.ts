@@ -10,10 +10,12 @@ const createGenerator = (config?: Random.NonPrimitveConfig) => {
 	objectConfig.objectConfig = config?.objectConfig
 	objectConfig.arrayConfig = config?.arrayConfig
 	objectConfig.depth = depth - 1
+	objectConfig.exclude = exclude
 	const arrayConfig = config?.arrayConfig ?? {}
 	arrayConfig.objectConfig = config?.objectConfig
 	arrayConfig.arrayConfig = config?.arrayConfig
 	arrayConfig.depth = depth - 1
+	arrayConfig.exclude = exclude
 	if (depth === 1) {
 		if (!exclude.includes("object")) exclude.push("object")
 		if (!exclude.includes("array")) exclude.push("array")
