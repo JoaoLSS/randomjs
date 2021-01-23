@@ -3,9 +3,9 @@
  * @param config object containing the configuration, min (defaults to 0) and max (default to 10)
  */
 export const integer = (config?: Random.IntegerConfig) => {
-	const min = config?.min ?? 0
-	const max = (config?.max ?? 10) + 1 - min - Number.EPSILON
-	return min + Math.floor(Math.random() * max)
+	const min = Math.ceil(config?.min ?? -0.5)
+	const max = (config?.max ?? 10) - min
+	return min + Math.round(Math.random() * max)
 }
 
 /**

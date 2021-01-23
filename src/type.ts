@@ -12,10 +12,10 @@ const types: Random.Type[] = ["string", "array", "object", "int", "decimal", "nu
  * the values can be "string","array","object","int","decimal","null","undefined"
  */
 export const type = (config?: Random.TypeConfig): Random.Type => {
-	const _types = config?.exclude ? types.filter((t) => !config.exclude?.includes(t)) : types
-	const min = 0
+	const exclude = config?.exclude ?? []
+	const _types = types.filter((t) => !exclude.includes(t))
 	const max = _types.length - 1
-	return _types[integer({ min, max })]
+	return _types[integer({ max })]
 }
 
 /**
