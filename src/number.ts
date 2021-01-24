@@ -10,12 +10,12 @@ export const integer = (config?: Random.IntegerConfig) => {
 
 /**
  * Function that returns a random decimal
- * @param config object containing the configuration, min (defaults to 0), max (defaults to 10) and decimalPlaces (defaults to 2)
+ * @param config object containing the configuration, min (defaults to 0), max (defaults to 1) and decimalPlaces (defaults to 2)
  */
 export const decimal = (config?: Random.DecimalConfig) => {
 	const decimalPlaces = config?.decimalPlaces ?? 2
 	const tenPow = Math.pow(10, decimalPlaces)
 	const min = (config?.min ?? 0) * tenPow
-	const max = (config?.max ?? 10) * tenPow
+	const max = (config?.max ?? 1) * tenPow
 	return integer({ min, max }) / tenPow
 }
